@@ -1,0 +1,6 @@
+$ nano /etc/hosts/
+
+$ ffuf -H 'Host: FUZZ.futurevera.thm' -u http://{MachineIp}/ -w /pathofwordlist -fs {size}
+
+After getting all subdomain after enumerating try changing the port of every subdomain from 443 to 80.
+cuz port 80 dont check ssl so it reviel the flag.
